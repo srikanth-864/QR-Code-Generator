@@ -1,0 +1,139 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+button:hover {
+  cursor: pointer;
+  transform:  translateY(-5px);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(188, 82, 22),rgb(151, 142, 142),rgb(50, 122, 46));
+  height: 100vh;
+}
+@media screen and (max-width: 50em) {
+  body {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+body .heading {
+  margin: 3rem 0 5rem 0;
+}
+body .title,
+body .sub-title {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #12130f;
+  color: #0a0909;
+}
+body .sub-title {
+  font-size: 1.5rem;
+  color: #060003;
+  opacity: 0.5;
+}
+body .user-input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+@media screen and (max-width: 50em) {
+  body .user-input-section {
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+}
+body .user-input-section .user-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body .user-input-section .user-input label {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+body .user-input-section .user-input input {
+  width: 80%;
+  max-width: 50rem;
+  font-size: 20px;
+  outline: none;
+  border: 50%;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 1.5rem 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  color: #060606;
+}
+body .user-input-section .user-input input::placeholder {
+  color: #4c4545;
+}
+body .button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(blue,rgb(159, 119, 223));
+  color: rgb(250, 245, 245);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+}
+button:hover{
+  opacity: .7;
+}
+body .qr-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50px;
+}
+@media screen and (max-width: 100em) {
+  body .qr-code-container {
+    width: 40%;
+  }
+}
+body .qr-code-container .qr-code {
+  border-radius: 2rem;
+  background: linear-gradient(rgb(39, 150, 175),rgb(34, 179, 119),rgb(133, 121, 121));
+  background-color: #86060633;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  padding: 10rem;
+}
+body .qr-code-container .qr-code button {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(blue,rgb(159, 119, 223));
+  color: #2c1c19;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+}
+body .qr-code-container .qr-code button a {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #faf5f3;
+  padding: 1rem;
+}
